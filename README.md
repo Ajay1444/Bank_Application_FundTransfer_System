@@ -1,12 +1,17 @@
 # Bank_Application_FundTransfer_System
 
 FundTransfer API
+
 This project is based on the springboot 2.7.6 version using mySQL as backend DB. We are using JWT token for authenticate the api for security. In this api we perform business operation like Create account ,Delete account, Update account, Delete all acocunt and Fund transfer from one account to different.
 
 Get Token:
+
 Endpoint: POST
+
 URL:http://localhost:8080/token
+
 Request Payload:
+  
   {
     "username":"AjayGaikwad",
     "password":"ajay1444"
