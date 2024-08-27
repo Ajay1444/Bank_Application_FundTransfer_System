@@ -17,12 +17,19 @@ Request Payload:
     "password":"ajay1444"
   }
 
+
 1. Create Account
+   
 Endpoint: POST
+
 URL: http://localhost:8080/account
+
 Headers:
+
 Authorization: {Brearer {Token}}
+
 Request Payload:
+
     {
     "accountNumber":"12386",
     "accountType":"Current",
@@ -49,24 +56,41 @@ Request Payload:
     }
 }
 
-2. Get All Account details
+
+3. Get All Account details
+   
 Endpoint: GET
+
 URL: http://localhost:8080/accounts
+
 Headers:
+
 Authorization: {Brearer {Token}}
+
 
 3.Get Account Details based on Account Number
+
 Endpoint: GET
+
 URL: http://localhost:8080/account/{Account Number}
+
 Headers:
+
 Authorization: {Brearer {Token}}
 
+
 4.Update Account Details based on Account Number
+
 Endpoint: PUT
+
 URL: http://localhost:8080/account/{Account Number}
+
 Headers:
+
 Authorization: {Brearer {Token}}
+
 Request Payload:
+
    {
     "accountNumber":"12386",
     "accountType":"Current",
@@ -96,20 +120,36 @@ Request Payload:
     }
 }
 
+
 5. Delete Account in the Bank
+   
 Endpoint: DELETE
+
 URL: http://localhost:8080/account/{Account Number}
+
 Headers:
+
 Authorization: {Brearer {Token}}
+
 
 6. Delete All Account in the Bank
+   
 Endpoint: DELETE
+
 URL: http://localhost:8080/accounts
+
 Headers:
+
 Authorization: {Brearer {Token}}
 
+
 7. Fund Transfer from one account to Different account
+   
 Endpoint: PUT
+
 URL: http://localhost:8080/fundTransfer/{From Account}/{To Account}/{AMOUNT}
+
 Headers:
+
 Authorization: {Brearer {Token}}
+
