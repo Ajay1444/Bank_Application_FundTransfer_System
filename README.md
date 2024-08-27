@@ -72,7 +72,7 @@ Authorization: {Brearer {Token}}
 
 Endpoint: GET
 
-URL: http://localhost:8080/account/{Account Number}
+URL: http://localhost:8080/account/{Account_Number}
 
 Headers:
 
@@ -83,7 +83,7 @@ Authorization: {Brearer {Token}}
 
 Endpoint: PUT
 
-URL: http://localhost:8080/account/{Account Number}
+URL: http://localhost:8080/account/{Account_Number}
 
 Headers:
 
@@ -91,41 +91,41 @@ Authorization: {Brearer {Token}}
 
 Request Payload:
 
-   {
-    "accountNumber":"12386",
-    "accountType":"Current",
-    "branchName":"Phase 2",
-    "ifscCode":"234567",
-    "balance":"6500",
-    "customer":{
-        "custId" :"1",
-        "customerName":"Ajay Gaikwad",
-        "address":[{
-            "addressId":"1",
-            "addressType":"Current",
-            "buildingName":"Apurva Hills",
-            "street":"Phase 2",
-            "city":"Pune",
-            "postalCode":"345673"
-        },
-        {
-            "addressId":"2",
-            "addressType":"Permanent",
-            "buildingName":"Ram Nivas",
-            "street":"Barshi Road",
-            "city":"Latur",
-            "postalCode":"413512"
-        }],
-        "mobileNumber":"9899897456"
+     {
+      "accountNumber":"12386",
+      "accountType":"Current",
+      "branchName":"Phase 2",
+      "ifscCode":"234567",
+      "balance":"6500",
+      "customer":{
+          "custId" :"1",
+          "customerName":"Ajay Gaikwad",
+          "address":[{
+              "addressId":"1",
+              "addressType":"Current",
+              "buildingName":"Apurva Hills",
+              "street":"Phase 2",
+              "city":"Pune",
+              "postalCode":"345673"
+          },
+          {
+              "addressId":"2",
+              "addressType":"Permanent",
+              "buildingName":"Ram Nivas",
+              "street":"Barshi Road",
+              "city":"Latur",
+              "postalCode":"413512"
+          }],
+          "mobileNumber":"9899897456"
+      }
     }
-}
 
 
 5. Delete Account in the Bank
    
 Endpoint: DELETE
 
-URL: http://localhost:8080/account/{Account Number}
+URL: http://localhost:8080/account/{Account_Number}
 
 Headers:
 
@@ -147,7 +147,7 @@ Authorization: {Brearer {Token}}
    
 Endpoint: PUT
 
-URL: http://localhost:8080/fundTransfer/{From Account}/{To Account}/{AMOUNT}
+URL: http://localhost:8080/fundTransfer/{From_Account}/{To_Account}/{AMOUNT}
 
 Headers:
 
