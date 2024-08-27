@@ -54,7 +54,7 @@ Request Payload:
         }],
         "mobileNumber":"9899897456"
     }
-}
+    }
 
 
 3. Get All Account details
